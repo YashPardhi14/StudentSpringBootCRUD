@@ -12,6 +12,7 @@ public class Student {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int ID;
 	
+	
 	private String firstName;
 	private String lastName;
 	private String gender;

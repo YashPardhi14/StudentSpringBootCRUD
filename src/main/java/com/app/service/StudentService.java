@@ -47,11 +47,20 @@ public class StudentService {
 		
 		return student;
 		
-		
-		
-		
 	}
 	
+	
+	public Student updateStudent(Student s) {
+		if(studentRepo.existsById(s.getID())) {
+			
+			return studentRepo.save(s);	
+			
+		}
+		else {
+			return null;
+		}
+		
+	}
 	
 	
 }
